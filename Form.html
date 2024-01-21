@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="formCSS.css" />
+</head>
+<body>
+    <div>
+    <form name= "mainForm" onsubmit="return false">
+        <fieldset id="choice">
+            <legend>New or Existing User?</legend>
+
+            <button onclick="newUser()">New User</button>
+            <button onclick="existingUser()">Existing User</button>
+
+        </fieldset>
+        <br>
+
+
+        <fieldset id="new">
+            <legend>New User</legend>
+
+            <label for="user"> UserName:</label>
+            <input name="user" id="user" placeholder="username" type="text"/>
+            <br>
+
+            <label for="pass">Password:</label>
+            <input name="pass" id="pass" placeholder="password" type="text"/>
+            <br>
+
+            <label for="city">City:</label>
+            <input name="city" id="city" placeholder="city" type="text"/>
+            <br>
+
+            <label for="state">State:</label>
+            <input name="state" id="state" placeholder="state" type="text"/>
+            <br>
+            
+            <input type="submit" id="button" value="Submit" onclick="newLogin()">
+        </fieldset>
+        <br>
+
+
+        <fieldset id="existing">
+            <legend>Existing User</legend>
+
+            <label for="username"> UserName:</label>
+            <input name="user" id="username" placeholder="username" type="text"/>
+            <br>
+
+            <label for="password">Password:</label>
+            <input name="pass" id="password" placeholder="password" type="text"/>
+            <br>
+
+            <!-- <label for="order type">Order type</label>
+            <select name="ordertype" id="ordertype" size="1">
+                <option value="carryout">carry out</option>
+                <option value="delivered" selected="selected">Delivery</option>
+                <option value="dine in">Dine in</option>
+            </select> -->
+            
+
+            <input type="submit" id="button" value="Submit" onclick="login()">
+
+        </fieldset>
+    </form>
+    </div>
+
+<script type="text/javascript" src="formJS.js"></script>
+</body>
+</html>
